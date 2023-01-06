@@ -65,4 +65,17 @@ return require('packer').startup(function(use)
   }
 
   use('lewis6991/gitsigns.nvim')
+
+  use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
+
+  use {
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  }
+
 end)
