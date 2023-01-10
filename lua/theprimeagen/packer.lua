@@ -39,14 +39,19 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+-- COLOR SCHEMES
 
+    use('folke/tokyonight.nvim')
+
+    use('Mofiqul/dracula.nvim')
+
+    use('olivercederborg/poimandres.nvim')
+
+----------------
   use("folke/zen-mode.nvim")
 
   use("github/copilot.vim")
 
-  use('folke/tokyonight.nvim')
-
-  use('Mofiqul/dracula.nvim')
 
   use 'nvim-tree/nvim-web-devicons'
   use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
@@ -87,4 +92,5 @@ return require('packer').startup(function(use)
           }
       end,
   })
+
 end)
