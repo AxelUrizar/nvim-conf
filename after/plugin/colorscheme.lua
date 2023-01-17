@@ -8,6 +8,7 @@ vim.cmd [[hi TelescopeResultsBorder guifg=NONE]]
 vim.cmd [[hi TelescopePreviewBorder guifg=NONE]]
 vim.cmd [[hi TelescopePromptBorder guifg=NONE]]
 vim.cmd [[hi TelescopeTitle guifg=NONE]]
+vim.cmd [[hi LineNr guifg=#91b4d5]]
 
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
