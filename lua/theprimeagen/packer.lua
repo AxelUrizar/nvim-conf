@@ -94,5 +94,5 @@ return require('packer').startup(function(use)
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
         setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
-    use('Shatur/neovim-session-manager').setup()
+    use('ggandor/leap.nvim').setup().add_default_mappings()
 end)
